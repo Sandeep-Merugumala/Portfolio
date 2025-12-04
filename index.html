@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // REPLACE THIS WITH YOUR ACTUAL PUBLIC KEY FROM EMAILJS DASHBOARD
+            emailjs.init("950ARR3ThUg7r6970"); 
+        })();
+    </script>
+</head>
+<body>
+
+    <div id="loader-wrapper">
+        <div class="loader">
+           <div data-glitch="Loading..." class="glitch">Loading...</div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">PORTFOLIO</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <label class="switch">
+            <input id="input" type="checkbox" checked>
+            <div class="slider round">
+                <div class="sun-moon">
+                    <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
+                    <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
+                </div>
+                <div class="stars">
+                    <svg id="star-1" class="star" viewBox="0 0 20 20"><path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path></svg>
+                    <svg id="star-2" class="star" viewBox="0 0 20 20"><path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path></svg>
+                    <svg id="star-3" class="star" viewBox="0 0 20 20"><path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path></svg>
+                    <svg id="star-4" class="star" viewBox="0 0 20 20"><path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path></svg>
+                </div>
+            </div>
+        </label>
+    </nav>
+
+    <section id="home">
+        <div class="hero-content">
+            <div class="hero-visual">
+                <div class="robot-container">
+                    <div class="robot-head">
+                        <div class="eye-container">
+                            <div class="eye left-eye"><div class="pupil"></div></div>
+                            <div class="eye right-eye"><div class="pupil"></div></div>
+                        </div>
+                    </div>
+                    <div class="robot-shadow"></div>
+                </div>
+            </div>
+
+            <div class="hero-text">
+                <h1>Hello, I'm <span class="highlight">Sandeep Merugumala</span></h1>
+                <p class="subtitle">Welcome to my portfolio.</p>
+                <p class="description">I am a passionate developer creating interactive experiences.</p>
+                
+                <div class="hero-socials">
+                    <a href="https://github.com/Sandeep-Merugumala" target="_blank" title="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/sandeep-merugumala/" target="_blank" title="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#" target="_blank" title="LeetCode"><ion-icon name="code-slash"></ion-icon></a> <a href="https://www.instagram.com/sandeep_merugumala/" target="_blank" title="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+
+                <a href="resume.pdf" download class="main-btn">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About <span class="highlight">Me</span></h2>
+                <p>I am a computer science student with a passion for building scalable web applications and exploring the world of embedded systems. My journey involves solving real-world problems through code, whether it's full-stack development with Node.js or programming STM32 microcontrollers.</p>
+                <div class="about-stats">
+                    <div class="stat"><h4>5+</h4><p>Projects</p></div>
+                    <div class="stat"><h4>3+</h4><p>Languages</p></div>
+                    <div class="stat"><h4>2</h4><p>Years Exp</p></div>
+                </div>
+            </div>
+            <div class="about-photo">
+                <div class="photo-placeholder"><ion-icon name="person"></ion-icon></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="grid-container">
+            <div class="card std-card">
+                <div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div>
+                <div class="content">
+                    <div class="icon"><ion-icon name="code-slash-outline"></ion-icon></div>
+                    <div class="bottom">
+                        <h4>Programming</h4>
+                        <div class="skill-bars">
+                            <div class="skill-item"><span>C / C++</span><div class="progress-container"><div class="progress" style="width: 90%;"></div></div></div>
+                            <div class="skill-item"><span>Python</span><div class="progress-container"><div class="progress" style="width: 85%;"></div></div></div>
+                            <div class="skill-item"><span>JavaScript</span><div class="progress-container"><div class="progress" style="width: 75%;"></div></div></div>
+                            <div class="skill-item"><span>Java</span><div class="progress-container"><div class="progress" style="width: 75%;"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="desktop-outline"></ion-icon></div><div class="bottom"><h4>Frontend</h4><div class="skill-bars"><div class="skill-item"><span>HTML/CSS</span><div class="progress-container"><div class="progress" style="width: 95%;"></div></div></div><div class="skill-item"><span>React</span><div class="progress-container"><div class="progress" style="width: 70%;"></div></div></div></div></div></div></div><div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="settings-outline"></ion-icon></div><div class="bottom"><h4>Backend</h4><div class="skill-bars"><div class="skill-item"><span>Node.js</span><div class="progress-container"><div class="progress" style="width: 60%;"></div></div></div></div></div></div></div><div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="server-outline"></ion-icon></div><div class="bottom"><h4>DataBase</h4><div class="skill-bars"><div class="skill-item"><span>SQL</span><div class="progress-container"><div class="progress" style="width: 80%;"></div></div></div><div class="skill-item"><span>MongoDB</span><div class="progress-container"><div class="progress" style="width: 80%;"></div></div></div></div></div></div></div><div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="construct-outline"></ion-icon></div><div class="bottom"><h4>FrameWorks</h4><div class="skill-bars"><div class="skill-item"><span>Express JS</span><div class="progress-container"><div class="progress" style="width: 90%;"></div></div></div></div></div></div></div><div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="terminal-outline"></ion-icon></div><div class="bottom"><h4>OS</h4><div class="skill-bars"><div class="skill-item"><span>Windows</span><div class="progress-container"><div class="progress" style="width: 90%;"></div></div></div><div class="skill-item"><span>Linux</span><div class="progress-container"><div class="progress" style="width: 85%;"></div></div></div></div></div></div></div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="grid-container">
+             <div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="school" style="color: #c51b47;"></ion-icon></div><div class="bottom edu-bottom"><div class="edu-title">Amrita Vishwa Vidyapeetham</div><p class="edu-detail">B.Tech - Computer Science</p><p class="edu-detail edu-score">Grade: 7.32 / 10.00</p><p class="edu-date">Aug 2023 – Present</p></div></div></div><div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="library" style="color: #f7a400;"></ion-icon></div><div class="bottom edu-bottom"><div class="edu-title">Fiitjee International College</div><p class="edu-detail">Intermediate XI & XII - MPC</p><p class="edu-detail edu-score">Grade: 969 / 1000</p><p class="edu-date">2021 - 2023</p></div></div></div><div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="book" style="color: #ffd700;"></ion-icon></div><div class="bottom edu-bottom"><div class="edu-title">Fiitjee International School</div><p class="edu-detail">Class X</p><p class="edu-detail edu-score">Grade: 10.0 / 10.0</p><p class="edu-date">2021</p></div></div></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img-box" style="background: linear-gradient(135deg, #2a0845, #6441A5);"><ion-icon name="cart-outline"></ion-icon></div>
+                <div class="project-content">
+                    <h3>ShopsBuzz</h3>
+                    <div class="tech-stack"><span>Node.js</span><span>TiDB</span><span>Razorpay</span></div>
+                    <p class="project-desc">A full-stack e-commerce platform with an AI Chatbot and secure payments.</p>
+                    <button class="view-btn" onclick="window.open('https://github.com/Sandeep-Merugumala/shopsbuzz', '_blank')">View Details</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img-box" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);"><ion-icon name="hardware-chip-outline"></ion-icon></div>
+                <div class="project-content">
+                    <h3>Smart Irrigation</h3>
+                    <div class="tech-stack"><span>STM32</span><span>C</span><span>IoT Sensors</span></div>
+                    <p class="project-desc">Automated water management system using STM32 microcontrollers and sensors.</p>
+                    <button class="view-btn" onclick="window.open('https://github.com/Sandeep-Merugumala/smart-irrigation', '_blank')">View Details</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img-box" style="background: linear-gradient(135deg, #000000, #434343);"><ion-icon name="desktop-outline"></ion-icon></div>
+                <div class="project-content">
+                    <h3>3D Portfolio</h3>
+                    <div class="tech-stack"><span>HTML/CSS</span><span>JavaScript</span><span>3D CSS</span></div>
+                    <p class="project-desc">An interactive personal portfolio website featuring 3D elements and dark mode.</p>
+                    <button class="view-btn" onclick="window.open('https://github.com/Sandeep-Merugumala/3d-portfolio', '_blank')">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="two-col-grid">
+            <div class="card card-dark wide-card">
+                <div class="card-header">
+                    <div class="card-logo"><ion-icon name="briefcase-outline"></ion-icon></div>
+                    <div class="card-title-block">
+                        <h3>Full Stack Intern</h3>
+                        <h4>Tech Solutions Inc.</h4>
+                        <p class="card-date">Jan 2024 - Present</p>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <p>Developed and maintained responsive web applications using React.js for the frontend and Node.js with Express for the backend. Collaborated with cross-functional teams to design and implement new features, ensuring high performance and scalability. Integrated RESTful APIs and worked with MongoDB for database management.</p>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-pill">React.js</span><span class="skill-pill">Node.js</span><span class="skill-pill">MongoDB</span><span class="skill-pill">REST API</span>
+                </div>
+            </div>
+            <div class="card card-dark wide-card">
+                <div class="card-header">
+                    <div class="card-logo"><ion-icon name="code-working-outline"></ion-icon></div>
+                    <div class="card-title-block">
+                        <h3>Freelance Web Developer</h3>
+                        <h4>Self-Employed</h4>
+                        <p class="card-date">Jun 2023 - Dec 2023</p>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <p>Designed and built custom websites for local businesses, focusing on user experience and SEO optimization. Utilized HTML, CSS, and JavaScript to create interactive and mobile-friendly interfaces. Communicated effectively with clients to understand their requirements and deliver high-quality solutions on time.</p>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-pill">HTML5</span><span class="skill-pill">CSS3</span><span class="skill-pill">JavaScript</span><span class="skill-pill">SEO</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certificates</h2>
+        <div class="two-col-grid">
+            <div class="card card-dark wide-card" style="cursor: pointer;" onclick="window.open('https://www.credly.com/badges/3374a1ed-44ee-4257-8deb-a812926e828b/linked_in_profile', '_blank')">
+                <div class="card-header">
+                    <div class="card-logo" style="color: #FF9900;"><ion-icon name="cloud-outline"></ion-icon></div>
+                    <div class="card-title-block">
+                        <h3>AWS Academy Graduate - Cloud Foundations</h3>
+                        <h4>by AWS Academy</h4>
+                        <p class="card-date">Issued: September 2025</p>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <p>Completed the AWS Academy Cloud Foundations course, gaining understanding of core AWS cloud concepts including cloud computing models, global infrastructure, security best practices, and essential services like compute, storage, and databases.</p>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-pill">AWS Architecture</span><span class="skill-pill">Cloud Foundations</span><span class="skill-pill">Security</span>
+                </div>
+                <p class="credential-link">Credential ID: 3374a1ed-44ee-4257-8deb-a812926e828b</p>
+            </div>
+            <div class="card card-dark wide-card">
+                <div class="card-header">
+                    <div class="card-logo" style="color: #00FFCC;"><ion-icon name="code-slash-outline"></ion-icon></div>
+                    <div class="card-title-block">
+                        <h3>Full Stack Developer</h3>
+                        <h4>by Udemy</h4>
+                        <p class="card-date">Issued: May 2025</p>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <p>Completed comprehensive Full-Stack Web Development course covering HTML, CSS, JavaScript, Node.js, React, and PostgreSQL. Gained hands-on experience building frontend and backend applications and managing databases.</p>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-pill">HTML & CSS</span><span class="skill-pill">JavaScript & React</span><span class="skill-pill">Node.js</span><span class="skill-pill">PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get In <span class="highlight">Touch</span></h2>
+        <div class="contact-wrapper">
+            <div class="contact-details">
+                <p class="contact-label">Call Me Directly</p>
+                <h1 class="big-phone">8639519002</h1>
+                <p class="contact-label">Drop an Email</p>
+                <h3 class="big-email">sandeepmerugumala480@gmail.com</h3>
+                <div class="social-links-contact">
+                    <a href="https://www.linkedin.com/in/sandeep-merugumala/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/Sandeep-Merugumala" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https://www.instagram.com/sandeep_merugumala/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+            </div>
+            <div class="contact-form-card">
+                <form id="contact-form">
+                    <div class="input-group"><input type="text" name="user_name" required placeholder=" "><label>Your Name</label></div>
+                    <div class="input-group"><input type="email" name="user_email" required placeholder=" "><label>Your Email</label></div>
+                    <div class="input-group"><textarea name="message" required placeholder=" " rows="4"></textarea><label>Message</label></div>
+                    <button type="submit" class="main-btn" style="width: 100%; margin-top: 10px;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sandeep Merugumala. All Rights Reserved.</p>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/sandeep-merugumala/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://github.com/Sandeep-Merugumala" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.instagram.com/sandeep_merugumala/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
