@@ -222,22 +222,186 @@ h2 { font-size: 3rem; margin-bottom: 50px; text-transform: uppercase; letter-spa
 @media (max-width: 768px) { .projects-grid { grid-template-columns: 1fr; height: auto; } }
 
 /* Contact Styles */
-.contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; width: 100%; max-width: 1200px; align-items: center; }
-.contact-details { text-align: left; display: flex; flex-direction: column; justify-content: center; }
-.contact-label { font-size: 1rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }
-.big-phone { font-size: 4.5rem; font-weight: 800; color: #fff; margin: 0 0 30px 0; background: var(--btn-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: 0.3s; }
-.big-phone:hover { transform: scale(1.02) translateX(10px); text-shadow: 0 0 30px rgba(139, 0, 255, 0.3); }
-.big-email { font-size: 2rem; color: var(--text-color); margin: 0 0 40px 0; font-weight: 300; }
-.social-links-contact { display: flex; gap: 20px; }
-.social-links-contact a { font-size: 2.5rem; color: var(--text-muted); transition: 0.3s; }
-.social-links-contact a:hover { color: var(--highlight); transform: translateY(-5px); }
-.contact-form-card { padding: 40px; border-radius: 20px; background: var(--card-dark-bg); border: 1px solid var(--card-border); box-shadow: 0 10px 40px -10px rgba(0,0,0,0.5); }
-.input-group { position: relative; margin-bottom: 25px; }
-.input-group input, .input-group textarea { width: 100%; padding: 15px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--card-border); border-radius: 10px; color: #fff; font-size: 1rem; outline: none; transition: 0.3s; }
-.input-group input:focus, .input-group textarea:focus { border-color: var(--highlight); background: rgba(139, 0, 255, 0.05); box-shadow: 0 0 15px rgba(139, 0, 255, 0.1); }
-.input-group label { position: absolute; left: 15px; top: 15px; color: var(--text-muted); pointer-events: none; transition: 0.3s; font-size: 1rem; }
-.input-group input:focus ~ label, .input-group input:not(:placeholder-shown) ~ label, .input-group textarea:focus ~ label, .input-group textarea:not(:placeholder-shown) ~ label { top: -10px; left: 10px; font-size: 0.8rem; color: var(--highlight); background: var(--bg-color); padding: 0 5px; }
-@media (max-width: 900px) { .contact-wrapper { grid-template-columns: 1fr; gap: 40px; } .big-phone { font-size: 3rem; } .contact-details { text-align: center; } .social-links-contact { justify-content: center; } }
+/* --- CONTACT SECTION (FIXED FORM) --- */
+/* ... (All previous CSS remains same) ... */
+
+/* --- UPDATED CONTACT SECTION STYLES --- */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Split 50/50 */
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+    align-items: flex-start; /* Align to top */
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between cards */
+}
+
+/* The Info Card (Block Style) */
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--card-dark-bg); /* Dark Theme Background */
+    border: 1px solid var(--card-border);
+    padding: 20px 25px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    border-color: var(--highlight);
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(139, 0, 255, 0.1);
+}
+
+/* Icons inside the card */
+.info-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--highlight);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.info-text h3 {
+    margin: 0 0 5px;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.info-text p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* Status Card (Available for Opportunities) */
+.status-card {
+    background: rgba(139, 0, 255, 0.1); /* Slight purple tint */
+    border-color: var(--highlight);
+}
+.status-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #00e571; /* Green dot */
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00e571;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+/* Social Links (Below cards) */
+.social-links-contact {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    justify-content: flex-start;
+}
+.social-links-contact a {
+    font-size: 2.5rem;
+    color: var(--text-muted);
+    transition: 0.3s;
+}
+.social-links-contact a:hover {
+    color: var(--highlight);
+    transform: translateY(-5px);
+}
+
+
+
+
+/* --- FORM CARD --- */
+.contact-form-card {
+    padding: 40px;
+    border-radius: 20px;
+    background: var(--card-dark-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px; /* More space between inputs */
+    width: 100%;
+}
+
+/* INPUT & TEXTAREA FIXES */
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 15px;
+    /* Force dark background to stop white box issue */
+    background-color: #111 !important; 
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #fff !important; /* Force white text */
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+.input-group textarea {
+    resize: vertical; /* Allow resizing vertically only */
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: var(--highlight);
+    box-shadow: 0 0 15px rgba(139, 0, 255, 0.1);
+}
+
+/* FLOATING LABEL FIX */
+.input-group label {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #888;
+    pointer-events: none;
+    transition: 0.3s;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+/* Move label up when input has focus or text */
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:not(:placeholder-shown) ~ label {
+    top: -12px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: var(--highlight);
+    background-color: var(--card-dark-bg); /* Matches card bg to cover line */
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .big-phone {
+        font-size: 3rem;
+    }
+    .contact-details {
+        text-align: center;
+    }
+    .social-links-contact {
+        justify-content: center;
+    }
+}
 
 /* Footer (Light Mode Fix) */
 footer { padding: 50px; background: #000; text-align: center; border-top: 1px solid #333; color: #fff; }
@@ -298,3 +462,5 @@ body.light-mode footer { background: #e0e0e0; color: #333; border-top: 1px solid
 #star-3 { width: 12px; top: 20px; left: 10px; animation-delay: 0.6s; }
 #star-4 { width: 18px; top: 0px; left: 18px; animation-delay: 1.3s; }
 @keyframes star-twinkle { 0% { transform: scale(1); } 40% { transform: scale(1.2); } 80% { transform: scale(0.8); } 100% { transform: scale(1); } }
+
+
