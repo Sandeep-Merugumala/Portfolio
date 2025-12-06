@@ -463,4 +463,21 @@ body.light-mode footer { background: #e0e0e0; color: #333; border-top: 1px solid
 #star-4 { width: 18px; top: 0px; left: 18px; animation-delay: 1.3s; }
 @keyframes star-twinkle { 0% { transform: scale(1); } 40% { transform: scale(1.2); } 80% { transform: scale(0.8); } 100% { transform: scale(1); } }
 
+/* Add this to your Contact Styles section */
 
+.big-phone, .big-email {
+    display: inline-block; /* Makes them behave like blocks */
+    text-decoration: none; /* Removes the underline */
+    cursor: pointer;       /* Shows the hand icon on hover */
+    transition: 0.3s;
+}
+
+.big-phone:hover {
+    transform: scale(1.05) translateX(10px);
+    text-shadow: 0 0 30px rgba(139, 0, 255, 0.3);
+}
+
+.big-email:hover {
+    color: var(--highlight);
+    transform: translateX(5px);
+}
