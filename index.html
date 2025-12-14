@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,18 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             // REPLACE THIS WITH YOUR ACTUAL PUBLIC KEY
-            emailjs.init("950ARR3ThUg7r6970"); 
+            emailjs.init("950ARR3ThUg7r6970");
         })();
     </script>
 </head>
+
 <body>
 
     <div id="loader-wrapper">
         <div class="loader">
-           <div data-glitch="Loading..." class="glitch">Loading...</div>
+            <div data-glitch="Loading..." class="glitch">Loading...</div>
         </div>
     </div>
 
@@ -35,11 +37,52 @@
             <li><a href="#certifications">Certificates</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        
+
         <label class="switch">
             <input id="input" type="checkbox" checked>
             <div class="slider round">
-                <div class="sun-moon"><svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg><svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg><svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg><svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg><svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg><svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg><svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg><svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg><svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg><svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg><svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg><svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg></div><div class="stars"><svg id="star-1" class="star" viewBox="0 0 20 20"><path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path></svg><svg id="star-2" class="star" viewBox="0 0 20 20"><path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path></svg><svg id="star-3" class="star" viewBox="0 0 20 20"><path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path></svg><svg id="star-4" class="star" viewBox="0 0 20 20"><path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path></svg></div>
+                <div class="sun-moon"><svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg><svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg><svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg><svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg><svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg><svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg><svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg><svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg><svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg><svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg><svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg><svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg></div>
+                <div class="stars"><svg id="star-1" class="star" viewBox="0 0 20 20">
+                        <path
+                            d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                        </path>
+                    </svg><svg id="star-2" class="star" viewBox="0 0 20 20">
+                        <path
+                            d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                        </path>
+                    </svg><svg id="star-3" class="star" viewBox="0 0 20 20">
+                        <path
+                            d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                        </path>
+                    </svg><svg id="star-4" class="star" viewBox="0 0 20 20">
+                        <path
+                            d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                        </path>
+                    </svg></div>
             </div>
         </label>
     </nav>
@@ -48,7 +91,16 @@
         <div class="hero-content">
             <div class="hero-visual">
                 <div class="robot-container">
-                    <div class="robot-head"><div class="eye-container"><div class="eye left-eye"><div class="pupil"></div></div><div class="eye right-eye"><div class="pupil"></div></div></div></div>
+                    <div class="robot-head">
+                        <div class="eye-container">
+                            <div class="eye left-eye">
+                                <div class="pupil"></div>
+                            </div>
+                            <div class="eye right-eye">
+                                <div class="pupil"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="robot-shadow"></div>
                 </div>
             </div>
@@ -57,10 +109,13 @@
                 <p class="subtitle">Welcome to my portfolio.</p>
                 <p class="description">I am a passionate developer creating interactive experiences.</p>
                 <div class="hero-socials">
-                    <a href="https://github.com/Sandeep-Merugumala" target="_blank" title="GitHub"><ion-icon name="logo-github"></ion-icon></a>
-                    <a href="https://www.linkedin.com/in/sandeep-merugumala/" target="_blank" title="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="#" target="_blank" title="LeetCode"><ion-icon name="code-slash"></ion-icon></a> 
-                    <a href="https://www.instagram.com/sandeep_merugumala/" target="_blank" title="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://github.com/Sandeep-Merugumala" target="_blank" title="GitHub"><ion-icon
+                            name="logo-github"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/sandeep-merugumala/" target="_blank" title="LinkedIn"><ion-icon
+                            name="logo-linkedin"></ion-icon></a>
+                    <a href="#" target="_blank" title="LeetCode"><ion-icon name="code-slash"></ion-icon></a>
+                    <a href="https://www.instagram.com/sandeep_merugumala/" target="_blank" title="Instagram"><ion-icon
+                            name="logo-instagram"></ion-icon></a>
                 </div>
                 <a href="CB_SC_U4CSE23664.pdf" download class="main-btn">Download Resume</a>
             </div>
@@ -71,35 +126,320 @@
         <div class="about-container">
             <div class="about-text">
                 <h2>About <span class="highlight">Me</span></h2>
-                <p>I am a computer science student with a passion for building scalable web applications and exploring the world of embedded systems. My journey involves solving real-world problems through code, whether it's full-stack development with Node.js or programming STM32 microcontrollers.</p>
-                <div class="about-stats"><div class="stat"><h4>5+</h4><p>Projects</p></div><div class="stat"><h4>3+</h4><p>Languages</p></div><div class="stat"><h4>2</h4><p>Years Exp</p></div></div>
-            </div>
-                <div class="about-photo">
-                    <div class="photo-placeholder">
-                        <img src="Sandeep.png" alt="Profile Photo of Me">
+                <p>I am a computer science student with a passion for building scalable web applications and exploring
+                    the world of embedded systems. My journey involves solving real-world problems through code, whether
+                    it's full-stack development with Node.js or programming STM32 microcontrollers.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h4>5+</h4>
+                        <p>Projects</p>
                     </div>
-                </div>        
+                    <div class="stat">
+                        <h4>3+</h4>
+                        <p>Languages</p>
+                    </div>
+                    <div class="stat">
+                        <h4>2</h4>
+                        <p>Years Exp</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-photo">
+                <div class="photo-placeholder">
+                    <img src="Sandeep.webp" alt="Profile Photo of Me">
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="skills">
         <h2>My Skills</h2>
         <div class="grid-container">
-             <div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="code-slash-outline"></ion-icon></div><div class="bottom"><h4>Programming</h4><div class="skill-bars"><div class="skill-item"><span>C / C++</span><div class="progress-container"><div class="progress" style="width: 90%;"></div></div></div><div class="skill-item"><span>Python</span><div class="progress-container"><div class="progress" style="width: 85%;"></div></div></div><div class="skill-item"><span>JavaScript</span><div class="progress-container"><div class="progress" style="width: 75%;"></div></div></div><div class="skill-item"><span>Java</span><div class="progress-container"><div class="progress" style="width: 75%;"></div></div></div></div></div></div></div>
-             <div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="desktop-outline"></ion-icon></div><div class="bottom"><h4>Frontend</h4><div class="skill-bars"><div class="skill-item"><span>HTML/CSS</span><div class="progress-container"><div class="progress" style="width: 95%;"></div></div></div><div class="skill-item"><span>React</span><div class="progress-container"><div class="progress" style="width: 70%;"></div></div></div></div></div></div></div>
-             <div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="settings-outline"></ion-icon></div><div class="bottom"><h4>Backend</h4><div class="skill-bars"><div class="skill-item"><span>Node.js</span><div class="progress-container"><div class="progress" style="width: 60%;"></div></div></div></div></div></div></div>
-             <div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="server-outline"></ion-icon></div><div class="bottom"><h4>DataBase</h4><div class="skill-bars"><div class="skill-item"><span>SQL</span><div class="progress-container"><div class="progress" style="width: 80%;"></div></div></div><div class="skill-item"><span>MongoDB</span><div class="progress-container"><div class="progress" style="width: 80%;"></div></div></div></div></div></div></div>
-             <div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="construct-outline"></ion-icon></div><div class="bottom"><h4>FrameWorks</h4><div class="skill-bars"><div class="skill-item"><span>Express JS</span><div class="progress-container"><div class="progress" style="width: 90%;"></div></div></div></div></div></div></div>
-             <div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="terminal-outline"></ion-icon></div><div class="bottom"><h4>OS</h4><div class="skill-bars"><div class="skill-item"><span>Windows</span><div class="progress-container"><div class="progress" style="width: 90%;"></div></div></div><div class="skill-item"><span>Linux</span><div class="progress-container"><div class="progress" style="width: 85%;"></div></div></div></div></div></div></div>
+            <div class="card std-card">
+                <div class="light-layer">
+                    <div class="slit"></div>
+                    <div class="lumen">
+                        <div class="min"></div>
+                        <div class="mid"></div>
+                        <div class="hi"></div>
+                    </div>
+                    <div class="darken">
+                        <div class="sl"></div>
+                        <div class="ll"></div>
+                        <div class="slt"></div>
+                        <div class="srt"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="icon"><ion-icon name="code-slash-outline"></ion-icon></div>
+                    <div class="bottom">
+                        <h4>Programming</h4>
+                        <div class="skill-bars">
+                            <div class="skill-item"><span>C / C++</span>
+                                <div class="progress-container">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span>Python</span>
+                                <div class="progress-container">
+                                    <div class="progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span>JavaScript</span>
+                                <div class="progress-container">
+                                    <div class="progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span>Java</span>
+                                <div class="progress-container">
+                                    <div class="progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card std-card">
+                <div class="light-layer">
+                    <div class="slit"></div>
+                    <div class="lumen">
+                        <div class="min"></div>
+                        <div class="mid"></div>
+                        <div class="hi"></div>
+                    </div>
+                    <div class="darken">
+                        <div class="sl"></div>
+                        <div class="ll"></div>
+                        <div class="slt"></div>
+                        <div class="srt"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="icon"><ion-icon name="desktop-outline"></ion-icon></div>
+                    <div class="bottom">
+                        <h4>Frontend</h4>
+                        <div class="skill-bars">
+                            <div class="skill-item"><span>HTML/CSS</span>
+                                <div class="progress-container">
+                                    <div class="progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span>React</span>
+                                <div class="progress-container">
+                                    <div class="progress" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card std-card">
+                <div class="light-layer">
+                    <div class="slit"></div>
+                    <div class="lumen">
+                        <div class="min"></div>
+                        <div class="mid"></div>
+                        <div class="hi"></div>
+                    </div>
+                    <div class="darken">
+                        <div class="sl"></div>
+                        <div class="ll"></div>
+                        <div class="slt"></div>
+                        <div class="srt"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="icon"><ion-icon name="settings-outline"></ion-icon></div>
+                    <div class="bottom">
+                        <h4>Backend</h4>
+                        <div class="skill-bars">
+                            <div class="skill-item"><span>Node.js</span>
+                                <div class="progress-container">
+                                    <div class="progress" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card std-card">
+                <div class="light-layer">
+                    <div class="slit"></div>
+                    <div class="lumen">
+                        <div class="min"></div>
+                        <div class="mid"></div>
+                        <div class="hi"></div>
+                    </div>
+                    <div class="darken">
+                        <div class="sl"></div>
+                        <div class="ll"></div>
+                        <div class="slt"></div>
+                        <div class="srt"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="icon"><ion-icon name="server-outline"></ion-icon></div>
+                    <div class="bottom">
+                        <h4>DataBase</h4>
+                        <div class="skill-bars">
+                            <div class="skill-item"><span>SQL</span>
+                                <div class="progress-container">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span>MongoDB</span>
+                                <div class="progress-container">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card std-card">
+                <div class="light-layer">
+                    <div class="slit"></div>
+                    <div class="lumen">
+                        <div class="min"></div>
+                        <div class="mid"></div>
+                        <div class="hi"></div>
+                    </div>
+                    <div class="darken">
+                        <div class="sl"></div>
+                        <div class="ll"></div>
+                        <div class="slt"></div>
+                        <div class="srt"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="icon"><ion-icon name="construct-outline"></ion-icon></div>
+                    <div class="bottom">
+                        <h4>FrameWorks</h4>
+                        <div class="skill-bars">
+                            <div class="skill-item"><span>Express JS</span>
+                                <div class="progress-container">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card std-card">
+                <div class="light-layer">
+                    <div class="slit"></div>
+                    <div class="lumen">
+                        <div class="min"></div>
+                        <div class="mid"></div>
+                        <div class="hi"></div>
+                    </div>
+                    <div class="darken">
+                        <div class="sl"></div>
+                        <div class="ll"></div>
+                        <div class="slt"></div>
+                        <div class="srt"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="icon"><ion-icon name="terminal-outline"></ion-icon></div>
+                    <div class="bottom">
+                        <h4>OS</h4>
+                        <div class="skill-bars">
+                            <div class="skill-item"><span>Windows</span>
+                                <div class="progress-container">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item"><span>Linux</span>
+                                <div class="progress-container">
+                                    <div class="progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="education">
         <h2>Education</h2>
         <div class="grid-container">
-            <div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="school" style="color: #c51b47;"></ion-icon></div><div class="bottom edu-bottom"><div class="edu-title">Amrita Vishwa Vidyapeetham</div><p class="edu-detail">B.Tech - Computer Science</p><p class="edu-detail edu-score">Grade: 7.32 / 10.00</p><p class="edu-date">Aug 2023 – Present</p></div></div></div>
-            <div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="library" style="color: #f7a400;"></ion-icon></div><div class="bottom edu-bottom"><div class="edu-title">Fiitjee Junior College</div><p class="edu-detail">Intermediate XI & XII - MPC</p><p class="edu-detail edu-score">Grade: 969 / 1000</p><p class="edu-date">2021 - 2023</p></div></div></div>
-            <div class="card std-card"><div class="light-layer"><div class="slit"></div><div class="lumen"><div class="min"></div><div class="mid"></div><div class="hi"></div></div><div class="darken"><div class="sl"></div><div class="ll"></div><div class="slt"></div><div class="srt"></div></div></div><div class="content"><div class="icon"><ion-icon name="book" style="color: #ffd700;"></ion-icon></div><div class="bottom edu-bottom"><div class="edu-title">Fiitjee International School</div><p class="edu-detail">Class X</p><p class="edu-detail edu-score">Grade: 10.0 / 10.0</p><p class="edu-date">2021</p></div></div></div>
+            <div class="card std-card">
+                <div class="light-layer">
+                    <div class="slit"></div>
+                    <div class="lumen">
+                        <div class="min"></div>
+                        <div class="mid"></div>
+                        <div class="hi"></div>
+                    </div>
+                    <div class="darken">
+                        <div class="sl"></div>
+                        <div class="ll"></div>
+                        <div class="slt"></div>
+                        <div class="srt"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="icon"><ion-icon name="school" style="color: #c51b47;"></ion-icon></div>
+                    <div class="bottom edu-bottom">
+                        <div class="edu-title">Amrita Vishwa Vidyapeetham</div>
+                        <p class="edu-detail">B.Tech - Computer Science</p>
+                        <p class="edu-detail edu-score">Grade: 7.32 / 10.00</p>
+                        <p class="edu-date">Aug 2023 – Present</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card std-card">
+                <div class="light-layer">
+                    <div class="slit"></div>
+                    <div class="lumen">
+                        <div class="min"></div>
+                        <div class="mid"></div>
+                        <div class="hi"></div>
+                    </div>
+                    <div class="darken">
+                        <div class="sl"></div>
+                        <div class="ll"></div>
+                        <div class="slt"></div>
+                        <div class="srt"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="icon"><ion-icon name="library" style="color: #f7a400;"></ion-icon></div>
+                    <div class="bottom edu-bottom">
+                        <div class="edu-title">Fiitjee Junior College</div>
+                        <p class="edu-detail">Intermediate XI & XII - MPC</p>
+                        <p class="edu-detail edu-score">Grade: 969 / 1000</p>
+                        <p class="edu-date">2021 - 2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card std-card">
+                <div class="light-layer">
+                    <div class="slit"></div>
+                    <div class="lumen">
+                        <div class="min"></div>
+                        <div class="mid"></div>
+                        <div class="hi"></div>
+                    </div>
+                    <div class="darken">
+                        <div class="sl"></div>
+                        <div class="ll"></div>
+                        <div class="slt"></div>
+                        <div class="srt"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="icon"><ion-icon name="book" style="color: #ffd700;"></ion-icon></div>
+                    <div class="bottom edu-bottom">
+                        <div class="edu-title">Fiitjee International School</div>
+                        <p class="edu-detail">Class X</p>
+                        <p class="edu-detail edu-score">Grade: 10.0 / 10.0</p>
+                        <p class="edu-date">2021</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -107,61 +447,84 @@
         <h2>Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-img-box" style="background: linear-gradient(135deg, #2a0845, #6441A5);"><ion-icon name="cart-outline"></ion-icon></div>
+                <div class="project-img-box" style="background: linear-gradient(135deg, #2a0845, #6441A5);"><ion-icon
+                        name="cart-outline"></ion-icon></div>
                 <div class="project-content">
                     <h3>ShopsBuzz</h3>
                     <div class="tech-stack"><span>Node.js</span><span>TiDB</span><span>Razorpay</span></div>
                     <p class="project-desc">A full-stack e-commerce platform with an AI Chatbot and secure payments.</p>
-                    <button class="view-btn" onclick="window.open('https://www.shopsbuzz.shop/', '_blank')">View Details</button>
+                    <button class="view-btn" onclick="window.open('https://www.shopsbuzz.shop/', '_blank')">View
+                        Details</button>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-img-box" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);"><ion-icon name="hardware-chip-outline"></ion-icon></div>
+                <div class="project-img-box" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);">
+                    <ion-icon name="hardware-chip-outline"></ion-icon></div>
                 <div class="project-content">
                     <h3>Smart Irrigation</h3>
                     <div class="tech-stack"><span>STM32</span><span>C</span><span>IoT Sensors</span></div>
-                    <p class="project-desc">Automated water management system using STM32 microcontrollers and sensors.</p>
-                    <button class="view-btn" onclick="window.open('https://github.com/Sandeep-Merugumala/Smart-Irrigation-System-using-STM32F', '_blank')">View Details</button>
+                    <p class="project-desc">Automated water management system using STM32 microcontrollers and sensors.
+                    </p>
+                    <button class="view-btn"
+                        onclick="window.open('https://github.com/Sandeep-Merugumala/Smart-Irrigation-System-using-STM32F', '_blank')">View
+                        Details</button>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-img-box" style="background: linear-gradient(135deg, #000000, #434343);"><ion-icon name="desktop-outline"></ion-icon></div>
+                <div class="project-img-box" style="background: linear-gradient(135deg, #000000, #434343);"><ion-icon
+                        name="desktop-outline"></ion-icon></div>
                 <div class="project-content">
                     <h3>3D Portfolio</h3>
                     <div class="tech-stack"><span>HTML/CSS</span><span>JavaScript</span><span>3D CSS</span></div>
-                    <p class="project-desc">An interactive personal portfolio website featuring 3D elements and dark mode.</p>
-                    <button class="view-btn" onclick="window.open('https://portfolio-ebon-five-3owfh7y3nw.vercel.app/', '_blank')">View Details</button>
+                    <p class="project-desc">An interactive personal portfolio website featuring 3D elements and dark
+                        mode.</p>
+                    <button class="view-btn"
+                        onclick="window.open('https://portfolio-ebon-five-3owfh7y3nw.vercel.app/', '_blank')">View
+                        Details</button>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-img-box" style="background: linear-gradient(135deg, #0f2027, #218a60, #43b641);"><ion-icon name="git-network-outline"></ion-icon></div>
+                <div class="project-img-box" style="background: linear-gradient(135deg, #0f2027, #218a60, #43b641);">
+                    <ion-icon name="git-network-outline"></ion-icon></div>
                 <div class="project-content">
                     <h3>Maze Pathfinding System using A* Search and Fibonacci Heap</h3>
                     <div class="tech-stack"><span>Python</span><span>A* Search</span><span>Trie Tree</span></div>
-                    <p class="project-desc">Designed and implemented a high-performance pathfinding engine capable of generating and solving complex mazes.</p>
-                    <button class="view-btn" onclick="window.open('https://github.com/Sandeep-Merugumala/fibonacci-a-star-maze-solver', '_blank')">View Details</button>
+                    <p class="project-desc">Designed and implemented a high-performance pathfinding engine capable of
+                        generating and solving complex mazes.</p>
+                    <button class="view-btn"
+                        onclick="window.open('https://github.com/Sandeep-Merugumala/fibonacci-a-star-maze-solver', '_blank')">View
+                        Details</button>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-img-box" style="background: linear-gradient(135deg, #2a0845, #a54191);"><ion-icon name="terminal-outline"></div>
+                <div class="project-img-box" style="background: linear-gradient(135deg, #2a0845, #a54191);"><ion-icon
+                        name="terminal-outline"></div>
                 <div class="project-content">
                     <h3>C++ Algorithm Solvers</h3>
                     <div class="tech-stack"><span>C++</span><span>Algorithms</span><span>Data Structures</span></div>
-                    <p class="project-desc">A curated collection of classic algorithmic problem solvers implemented in C++, demonstrating strong understanding of search algorithms, recursion, and problem-solving patterns.</p>
-                    <button class="view-btn" onclick="window.open('https://github.com/Sandeep-Merugumala/cpp-algorithm-solvers', '_blank')">View Details</button>
+                    <p class="project-desc">A curated collection of classic algorithmic problem solvers implemented in
+                        C++, demonstrating strong understanding of search algorithms, recursion, and problem-solving
+                        patterns.</p>
+                    <button class="view-btn"
+                        onclick="window.open('https://github.com/Sandeep-Merugumala/cpp-algorithm-solvers', '_blank')">View
+                        Details</button>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-img-box" style="background: linear-gradient(135deg, #1a1a2e, #16213e);"><ion-icon name="game-controller-outline"></ion-icon></div>
+                <div class="project-img-box" style="background: linear-gradient(135deg, #1a1a2e, #16213e);"><ion-icon
+                        name="game-controller-outline"></ion-icon></div>
                 <div class="project-content">
                     <h3>Arduino OLED Game Console</h3>
-                    <div class="tech-stack"><span>Arduino UNO</span><span>OLED graphics rendering</span><span>Real-time user interaction</span></div>
-                    <p class="project-desc">A mini game console built using Arduino and an SSD1306 OLED display, featuring three interactive games: a Dodger arcade game, an LED-based memory challenge, and a number-guessing game.</p>
-                    <button class="view-btn" onclick="window.open('https://github.com/Sandeep-Merugumala/Game-Implementation', '_blank')">View Details</button>
-                    <button class="view-btn" onclick="window.open('https://github.com/Sandeep-Merugumala/Game-Implementation', '_blank')">View Details</button>
+                    <div class="tech-stack"><span>Arduino UNO</span><span>OLED graphics rendering</span><span>Real-time
+                            user interaction</span></div>
+                    <p class="project-desc">A mini game console built using Arduino and an SSD1306 OLED display,
+                        featuring three interactive games: a Dodger arcade game, an LED-based memory challenge, and a
+                        number-guessing game.</p>
+                    <button class="view-btn"
+                        onclick="window.open('https://github.com/Sandeep-Merugumala/Game-Implementation', '_blank')">View
+                        Details</button>
                 </div>
             </div>
-        </div>
     </section>
 
     <section id="experience">
@@ -177,9 +540,12 @@
                     </div>
                 </div>
                 <div class="card-description">
-                    <p>Developed and maintained responsive web applications using React.js for the frontend and Node.js with Express for the backend. Collaborated with cross-functional teams to design and implement new features.</p>
+                    <p>Developed and maintained responsive web applications using React.js for the frontend and Node.js
+                        with Express for the backend. Collaborated with cross-functional teams to design and implement
+                        new features.</p>
                 </div>
-                <div class="skills-container"><span class="skill-pill">React.js</span><span class="skill-pill">Node.js</span><span class="skill-pill">MongoDB</span></div>
+                <div class="skills-container"><span class="skill-pill">React.js</span><span
+                        class="skill-pill">Node.js</span><span class="skill-pill">MongoDB</span></div>
             </div>
             <div class="card card-dark wide-card">
                 <div class="card-header">
@@ -191,9 +557,11 @@
                     </div>
                 </div>
                 <div class="card-description">
-                    <p>Designed and built custom websites for local businesses, focusing on user experience and SEO optimization. Utilized HTML, CSS, and JavaScript to create interactive interfaces.</p>
+                    <p>Designed and built custom websites for local businesses, focusing on user experience and SEO
+                        optimization. Utilized HTML, CSS, and JavaScript to create interactive interfaces.</p>
                 </div>
-                <div class="skills-container"><span class="skill-pill">HTML5</span><span class="skill-pill">CSS3</span><span class="skill-pill">JavaScript</span></div>
+                <div class="skills-container"><span class="skill-pill">HTML5</span><span
+                        class="skill-pill">CSS3</span><span class="skill-pill">JavaScript</span></div>
             </div>
         </div>
     </section>
@@ -201,7 +569,8 @@
     <section id="certifications">
         <h2>Certificates</h2>
         <div class="two-col-grid">
-            <div class="card card-dark wide-card" style="cursor: pointer;" onclick="window.open('https://www.credly.com/badges/3374a1ed-44ee-4257-8deb-a812926e828b/linked_in_profile', '_blank')">
+            <div class="card card-dark wide-card" style="cursor: pointer;"
+                onclick="window.open('https://www.credly.com/badges/3374a1ed-44ee-4257-8deb-a812926e828b/linked_in_profile', '_blank')">
                 <div class="card-header">
                     <div class="card-logo" style="color: #FF9900;"><ion-icon name="cloud-outline"></ion-icon></div>
                     <div class="card-title-block">
@@ -210,8 +579,12 @@
                         <p class="card-date">Issued: September 2025</p>
                     </div>
                 </div>
-                <div class="card-description"><p>Completed the AWS Academy Cloud Foundations course, gaining understanding of core AWS cloud concepts including cloud computing models and global infrastructure.</p></div>
-                <div class="skills-container"><span class="skill-pill">AWS Architecture</span><span class="skill-pill">Security</span></div>
+                <div class="card-description">
+                    <p>Completed the AWS Academy Cloud Foundations course, gaining understanding of core AWS cloud
+                        concepts including cloud computing models and global infrastructure.</p>
+                </div>
+                <div class="skills-container"><span class="skill-pill">AWS Architecture</span><span
+                        class="skill-pill">Security</span></div>
                 <p class="credential-link">Credential ID: 3374a1ed-44ee-4257-8deb-a812926e828b</p>
             </div>
             <div class="card card-dark wide-card">
@@ -223,8 +596,12 @@
                         <p class="card-date">Issued: May 2025</p>
                     </div>
                 </div>
-                <div class="card-description"><p>Completed comprehensive Full-Stack Web Development course covering HTML, CSS, JavaScript, Node.js, React, and PostgreSQL.</p></div>
-                <div class="skills-container"><span class="skill-pill">HTML & CSS</span><span class="skill-pill">React</span><span class="skill-pill">Node.js</span></div>
+                <div class="card-description">
+                    <p>Completed comprehensive Full-Stack Web Development course covering HTML, CSS, JavaScript,
+                        Node.js, React, and PostgreSQL.</p>
+                </div>
+                <div class="skills-container"><span class="skill-pill">HTML & CSS</span><span
+                        class="skill-pill">React</span><span class="skill-pill">Node.js</span></div>
             </div>
         </div>
     </section>
@@ -232,16 +609,16 @@
     <section id="contact">
         <h2>Get In <span class="highlight">Touch</span></h2>
         <div class="contact-wrapper">
-            
+
             <div class="contact-details">
                 <a href="tel:+918639519002" class="big-phone">
                     <div class="info-card">
                         <div class="info-icon"><ion-icon name="call"></ion-icon></div>
                         <div class="info-text">
-                            
+
                             <h3>Phone</h3>
                             <p>+91 86395 19002</p>
-                            
+
                         </div>
                     </div>
                 </a>
@@ -264,7 +641,7 @@
                         <p>Coimbatore, India</p>
                     </div>
                 </div>
-                
+
                 <div class="info-card status-card">
                     <div class="status-dot"></div>
                     <div class="info-text">
@@ -274,18 +651,24 @@
                 </div>
 
                 <div class="social-links-contact">
-                    <a href="https://www.linkedin.com/in/sandeep-merugumala/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="https://github.com/Sandeep-Merugumala" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-                    <a href="https://www.instagram.com/sandeep_merugumala/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/sandeep-merugumala/" target="_blank"><ion-icon
+                            name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/Sandeep-Merugumala" target="_blank"><ion-icon
+                            name="logo-github"></ion-icon></a>
+                    <a href="https://www.instagram.com/sandeep_merugumala/" target="_blank"><ion-icon
+                            name="logo-instagram"></ion-icon></a>
                 </div>
 
             </div>
 
             <div class="contact-form-card">
                 <form id="contact-form">
-                    <div class="input-group"><input type="text" name="user_name" required placeholder=" "><label>Your Name</label></div>
-                    <div class="input-group"><input type="email" name="user_email" required placeholder=" "><label>Your Email</label></div>
-                    <div class="input-group"><textarea name="message" required placeholder=" " rows="4"></textarea><label>Message</label></div>
+                    <div class="input-group"><input type="text" name="user_name" required placeholder=" "><label>Your
+                            Name</label></div>
+                    <div class="input-group"><input type="email" name="user_email" required placeholder=" "><label>Your
+                            Email</label></div>
+                    <div class="input-group"><textarea name="message" required placeholder=" "
+                            rows="4"></textarea><label>Message</label></div>
                     <button type="submit" class="main-btn" style="width: 100%; margin-top: 10px;">Send Message</button>
                 </form>
             </div>
@@ -295,12 +678,15 @@
     <footer>
         <p>&copy; 2025 Sandeep Merugumala. All Rights Reserved.</p>
         <div class="socials">
-            <a href="https://www.linkedin.com/in/sandeep-merugumala/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/sandeep-merugumala/" target="_blank"><ion-icon
+                    name="logo-linkedin"></ion-icon></a>
             <a href="https://github.com/Sandeep-Merugumala" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-            <a href="https://www.instagram.com/sandeep_merugumala/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.instagram.com/sandeep_merugumala/" target="_blank"><ion-icon
+                    name="logo-instagram"></ion-icon></a>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
