@@ -214,7 +214,7 @@ h2 { font-size: 3rem; margin-bottom: 50px; text-transform: uppercase; letter-spa
 .skill-bars { opacity: 1; max-height: none; overflow: visible; margin-bottom: 0; }
 .skill-item span { font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 4px; }
 .progress-container { width: 100%; height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; }
-.progress { height: 100%; background: linear-gradient(90deg, #8b00ff, #00e571); border-radius: 3px; width: 0; transition: width 1s; }
+.progress { height: 100%; background: linear-gradient(90deg, #8b00ff, #00e571); border-radius: 3px; width: 0; transition: width 1s; box-shadow: 0 0 10px rgba(0, 229, 113, 0.5); }
 
 /* --- PROJECTS GRID --- */
 .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; width: 100%; height: 90%; max-width: 1600px; margin: 0 auto; }
@@ -426,6 +426,12 @@ body.light-mode footer { background: #e0e0e0; color: #333; border-top: 1px solid
 .glitch:after { animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite; color: #00e571; z-index: -2; }
 @keyframes glitch { 0% { transform: translate(0); } 20% { transform: translate(-3px, 3px); } 40% { transform: translate(-3px, -3px); } 60% { transform: translate(3px, 3px); } 80% { transform: translate(3px, -3px); } to { transform: translate(0); } }
 @keyframes shift { 0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% { transform: skewX(0deg); } 41% { transform: skewX(10deg); } 42% { transform: skewX(-10deg); } 59% { transform: skewX(40deg) skewY(10deg); } 60% { transform: skewX(-40deg) skewY(-10deg); } 63% { transform: skewX(10deg) skewY(-5deg); } 70% { transform: skewX(-50deg) skewY(-20deg); } 71% { transform: skewX(10deg) skewY(-10deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+    .glitch, .glitch:before, .glitch:after {
+        animation: none !important;
+    }
+}
 
 /* THEME TOGGLE (SUN/MOON) */
 .switch { position: relative; display: inline-block; width: 60px; height: 34px; }
